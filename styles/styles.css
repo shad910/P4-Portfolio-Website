@@ -33,11 +33,11 @@
     padding: 14px ;
     font-size: 15px;
     font-weight: 700;
-    line-height: 21px;
     border: none;
     border-radius: 5px;
     color: rgb(255, 255, 255);
     background: rgb(253, 110, 10);
+    cursor: pointer;
 }
 .section-title{
     font-size: 28px;
@@ -188,4 +188,93 @@ main{
     font-size: 12px;
     line-height: 22px;
     text-align: left;
+}
+
+/* Resume Section */
+.resume-space{
+    margin-bottom: 90px;
+}
+.resume-container{
+    display: flex;
+    gap: 56px;
+}
+.resume-title{
+    font-size: 24px;
+    font-weight: 700;
+    /* margin-bottom: 24px; */
+    text-align: left;
+}
+.resume-subtitle{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    text-align: left;
+}
+.coll{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    text-align: left;
+}
+.resume-description{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 23px;
+    text-align: left;
+}
+.btn-container{
+    justify-content: center;
+    margin-top: 40px;
+}
+
+/* Footer Section */
+footer{
+    background: rgb(255, 248, 243);
+    
+}
+footer .footer{
+    max-width: 912px;
+    padding: 104px 184px;
+    margin: 0 auto;
+    margin-top: 90px;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    gap: 93px;
+}
+.footer-column{
+    width: 50%;
+}
+.footer .footer-title{
+    font-size: 28px;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 20px;
+}
+footer .footer-description{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    margin-bottom: 24px;
+}
+.foot-icon{
+    display: flex;
+    flex-direction: row;
+    gap: 38px;
+}
+.foot-form{
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+.footer input[type="text"], input[type="email"], textarea{
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background: rgb(255, 255, 255);
 }
