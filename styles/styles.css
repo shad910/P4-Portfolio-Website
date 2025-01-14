@@ -186,5 +186,6 @@ main{
 }
 .skill-card .skill-description{
     font-size: 12px;
+    line-height: 22px;
     text-align: left;
 }
