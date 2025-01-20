@@ -30,8 +30,8 @@
     color: rgb(117, 117, 117);
 }
 .btn-primary{
-    padding: 15px ;
-    font-size: 15px;
+    padding: 16px ;
+    font-size: 14px;
     font-weight: 700;
     border: none;
     border-radius: 5px;
@@ -236,12 +236,10 @@ footer{
 }
 footer .footer{
     max-width: 912px;
-    padding: 104px 184px;
+    padding: 60px 184px;
     margin: 0 auto;
     margin-top: 90px;
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
     gap: 93px;
 }
 .footer-column{
@@ -277,4 +275,8 @@ footer .footer-description{
     border-radius: 5px;
     font-size: 16px;
     background: rgb(255, 255, 255);
+}
+footer .foot-info p{
+    text-align: center;
+    padding-bottom: 10px;
 }
