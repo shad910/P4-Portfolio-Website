@@ -55,7 +55,7 @@
 
 /* Header Section */
 .header{
-    background-image: url(../assets/developer.png), url(../assets/header_bg.png) ;
+    background-image: url(../images/developer.png), url(../images/header_bg.png) ;
     background-repeat: no-repeat;
     background-position: top 30px left 18px, bottom 4px right;
     background-size: 6%, 51%;
