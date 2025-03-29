@@ -1,7 +1,7 @@
-/* Font Section */
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* Font Section (Open Sans)*/
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
-.work-sans-normal {
+.work-sans {
   font-family: "Work Sans", serif;
   font-optical-sizing: auto;
   font-weight: normal;
@@ -9,274 +9,466 @@
 }
 
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 /* Shared Style */
-.bg-primary-color{
-    background-color: rgb(255, 248, 243);
+.bg-primary-color {
+  background-color: rgb(255, 248, 243);
 }
-.text-primary{
-    color: rgb(253, 110, 10);
+.text-primary {
+  color: rgb(253, 110, 10);
 }
-.dark-one{
-    color: rgb(24, 24, 24);
+.dark-one {
+  color: rgb(24, 24, 24);
 }
-.dark-two{
-    color: rgb(71, 71, 71);
+.dark-two {
+  color: rgb(71, 71, 71);
 }
-.dark-three{
-    color: rgb(117, 117, 117);
+.dark-three {
+  color: rgb(117, 117, 117);
 }
-.btn-primary{
-    padding: 16px ;
-    font-size: 14px;
+.btn-primary {
+  padding: 16px;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  background: rgb(253, 110, 10);
+  cursor: pointer;
+}
+.section-title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 38px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.section-description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+
+/* Header Section */
+.header {
+  background-image: url(../images/developer.png), url(../images/header_bg.png);
+  background-repeat: no-repeat;
+  background-position: top 30px left 18px, bottom 4px right;
+  background-size: 5%, 51%;
+  margin-bottom: 104px;
+}
+
+/* Navigation Section */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 19px;
+  padding-bottom: 12px;
+}
+nav .nav-title {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 48px;
+  text-align: left;
+}
+nav > ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+}
+
+/* Banner Style */
+.banner-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 30px 0 184px;
+}
+.banner-content {
+  max-width: 468px;
+}
+.banner-greetings {
+  font-size: 36px;
+  font-weight: 600;
+}
+.banner-title {
+  font-size: 68px;
+  font-weight: 700px;
+  margin-bottom: 16px;
+}
+.banner-description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 24px;
+}
+.banner-image img {
+  width: 467px;
+  height: 540px;
+}
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+/* Main Section */
+main {
+  max-width: 912px;
+  margin: 0 auto;
+}
+
+/* About Me */
+.about {
+  padding: 50px;
+  border-radius: 10px;
+  margin-bottom: 104px;
+}
+.about-container {
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 10px;
+}
+.about-box {
+  margin-bottom: 24px;
+}
+.about-items {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 24px;
+}
+.item-title {
+  font-size: 16px;
+  text-wrap: nowrap;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.item .item-description {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* What I do Section*/
+.what-i-do {
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 104px;
+}
+.skill-card-container {
+  margin-top: 40px;
+  display: flex;
+  gap: 19px;
+}
+.skill-card {
+  padding: 24px 26px;
+  border-radius: 5px;
+  box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+  background: rgb(255, 255, 255);
+}
+.skill-card .skill-img img {
+  margin-bottom: 24px;
+}
+.skill-card .skill-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.skill-card .skill-description {
+  font-size: 12px;
+  line-height: 22px;
+  text-align: left;
+}
+
+/* Resume Section */
+.resume-space {
+  margin-bottom: 90px;
+}
+.resume-container {
+  display: flex;
+  gap: 56px;
+}
+.resume-title {
+  font-size: 24px;
+  font-weight: 700;
+  /* margin-bottom: 24px; */
+  text-align: left;
+}
+.resume-subtitle {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 24px;
+  margin-bottom: 8px;
+  text-align: left;
+}
+.coll {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  text-align: left;
+}
+.resume-description {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 23px;
+  text-align: left;
+}
+.btn-container {
+  justify-content: center;
+  margin-top: 40px;
+}
+
+/* Footer Section */
+footer {
+  background: rgb(255, 248, 243);
+}
+footer .footer {
+  max-width: 912px;
+  padding: 70px 184px;
+  margin: 0 auto;
+  margin-top: 90px;
+  display: flex;
+  gap: 93px;
+}
+.footer-column {
+  width: 50%;
+}
+.footer .footer-title {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 20px;
+}
+footer .footer-description {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  margin-bottom: 24px;
+}
+.foot-icon {
+  display: flex;
+  flex-direction: row;
+  gap: 38px;
+}
+.foot-form {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+.footer input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background: rgb(255, 255, 255);
+}
+footer .foot-info p {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+/* Responsive Style Section */
+
+/* Responsive styling for small size device */
+@media screen and (max-width: 576px) {
+  /* Shared Style */
+  .btn-primary {
+    padding: 10px;
+    font-size: 10px;
     font-weight: 700;
     border: none;
     border-radius: 5px;
     color: rgb(255, 255, 255);
     background: rgb(253, 110, 10);
     cursor: pointer;
-}
-.section-title{
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 38px;
-    text-align: center;
-    margin-bottom: 24px;
-}
-.section-description{
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: center;
-}
+  }
 
-/* Header Section */
-.header{
-    background-image: url(../images/developer.png), url(../images/header_bg.png) ;
+  /* Header Section */
+  .header {
+    background-image: url(../images/developer.png), url(../images/header_bg.png);
     background-repeat: no-repeat;
-    background-position: top 30px left 18px, bottom 4px right;
-    background-size: 6%, 51%;
+    background-position: top 90px left 18px, bottom 4px right;
+    background-size: 6%, 95%;
     margin-bottom: 104px;
-}
+  }
 
-/* Navigation Section */
-nav{
-    display: flex;
+  /* Nav Section */
+  nav {
     justify-content: space-around;
-    align-items: center;
-    padding-top: 19px;
-    padding-bottom: 12px;
-}
-nav .nav-title{
-    font-size: 36px;
-    font-weight: 800;
-    line-height: 48px;
-    text-align: left;
-}
-nav>ul{
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-nav ul li{
-    list-style: none;
-}
-nav ul li a{
-    text-decoration: none;
-}
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+  .menu {
+    display: none;
+  }
 
-/* Banner Style */
-.banner-section{
-    display: flex;
-    justify-content: space-between;
+  .banner-section {
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin: 0 30px 0 184px;
-}
-.banner-content{
-    max-width: 468px;
-}
-.banner-greetings{
-    font-size: 36px;
+    gap: 30px;
+    margin: 0 15px 0 92px;
+  }
+  .banner-content {
+    width: 200px;
+  }
+  .banner-greetings {
+    font-size: 20px;
     font-weight: 600;
-}
-.banner-title{
-    font-size: 68px;
+  }
+  .banner-title {
+    font-size: 34px;
     font-weight: 700px;
     margin-bottom: 16px;
-}
-.banner-description{
+  }
+  .banner-description {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
     text-align: left;
     margin-bottom: 24px;
-}
-.banner-image img{
-    width: 467px;
-    height: 540px;
-}
-.btn-container{
+  }
+  .banner-image img {
+    width: 200px;
+    height: 240px;
+  }
+  .btn-container {
     display: flex;
     flex-direction: row;
-    gap: 24px;
-}
+    gap: 15px;
+  }
 
-/* Main Section */
-main{
-    max-width: 912px;
-    margin: 0 auto;
-}
-
-/* About Me */
-.about{
-    padding: 104px 124px;
-    border-radius: 10px;
-    margin-bottom: 104px;
-}
-.about-container{
-    background-color: rgb(255, 255, 255);
-    padding: 10px;
-    border-radius: 10px;
-}
-.about-box{
-    margin-bottom: 24px;
-}
-.about-items{
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-top: 24px;
-}
-.item-title{
-    font-size: 16px;
-    text-align: center;
-}
-.item .item-description{
-    font-size: 16px;
-    font-weight: 700;
-    text-align: left;
-}
-
-/* What I do Section*/
-.what-i-do{
-    background-color:rgb(255, 255, 255);
-    margin-bottom: 104px;
-}
-.skill-card-container{
-    margin-top: 40px;
-    display: flex;
-    gap: 19px;
-}
-.skill-card{
-    padding: 24px 26px;
-    border-radius: 5px;
-    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
-    background: rgb(255, 255, 255);
-}
-.skill-card .skill-img img{
-    margin-bottom: 24px;
-}
-.skill-card .skill-title{
-    font-size: 16px;
-    font-weight: 700;
-    margin-bottom: 16px;
-}
-.skill-card .skill-description{
-    font-size: 12px;
-    line-height: 22px;
-    text-align: left;
-}
-
-/* Resume Section */
-.resume-space{
-    margin-bottom: 90px;
-}
-.resume-container{
-    display: flex;
-    gap: 56px;
-}
-.resume-title{
-    font-size: 24px;
-    font-weight: 700;
-    /* margin-bottom: 24px; */
-    text-align: left;
-}
-.resume-subtitle{
-    font-size: 20px;
-    font-weight: 700;
-    margin-top: 24px;
-    margin-bottom: 8px;
-    text-align: left;
-}
-.coll{
-    font-size: 16px;
-    font-weight: 600;
-    margin-bottom: 16px;
-    text-align: left;
-}
-.resume-description{
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 22px;
-    margin-bottom: 23px;
-    text-align: left;
-}
-.btn-container{
-    justify-content: center;
-    margin-top: 40px;
-}
-
-/* Footer Section */
-footer{
-    background: rgb(255, 248, 243);
-    
-}
-footer .footer{
-    max-width: 912px;
-    padding: 70px 184px;
-    margin: 0 auto;
-    margin-top: 90px;
-    display: flex;
-    gap: 93px;
-}
-.footer-column{
-    width: 50%;
-}
-.footer .footer-title{
-    font-size: 28px;
-    font-weight: 700;
-    text-align: left;
-    margin-bottom: 20px;
-}
-footer .footer-description{
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 22px;
-    text-align: left;
-    margin-bottom: 24px;
-}
-.foot-icon{
-    display: flex;
-    flex-direction: row;
-    gap: 38px;
-}
-.foot-form{
-    display: flex;
+  /* About Me Section */
+  .about {
+    padding: 60px 40px;
+  }
+  .about-items {
     flex-direction: column;
-    gap: 19px;
-}
-.footer input[type="text"], input[type="email"], textarea{
-    width: 100%;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    background: rgb(255, 255, 255);
-}
-footer .foot-info p{
+    gap: 20px;
+  }
+  .item .item-description {
     text-align: center;
-    padding-bottom: 10px;
+  }
+
+  /* What I Do Section */
+  .what-i-do {
+    padding: 10px;
+  }
+  .skill-card-container {
+    padding: 5px;
+    flex-direction: column;
+  }
+
+  /* Resume Section */
+  .resume-space {
+    margin-bottom: 45px;
+  }
+  .resume-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  /* Footer Section */
+  footer .footer {
+    padding: 50px 30px;
+    flex-direction: column-reverse;
+  }
+}
+
+/* Responsive styling for medium size device */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  /* Shared Style */
+  .btn-container {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  /* Header Section */
+  .header {
+    background-image: url(../images/developer.png), url(../images/header_bg.png);
+    background-repeat: no-repeat;
+    background-position: top 85px left 18px, bottom 4px right 2px;
+    background-size: 5%, 45%;
+    margin-bottom: 104px;
+  }
+
+  /* Banner Section */
+  .banner-section {
+    gap: 25px;
+    margin: 0 15px 0 92px;
+  }
+  .banner-greetings {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .banner-title {
+    font-size: 34px;
+    font-weight: 700px;
+    margin-bottom: 16px;
+  }
+  .banner-description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 24px;
+  }
+  .banner-image img {
+    width: 280px;
+    height: 340px;
+  }
+
+  /* About Me Section */
+  .about {
+    padding: 60px;
+  }
+  .about-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-self: center;
+    gap: 20px;
+  }
+  .item .item-description {
+    text-align: center;
+  }
+
+  /* What I Do Section */
+  .what-i-do {
+    padding: 20px;
+  }
+  .skill-card-container {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-self: center;
+  }
+
+  /* Resume Section */
+  .resume-container {
+    padding: 20px;
+    gap: 30px;
+  }
+
+  /* Footer Section */
+  footer .footer {
+    padding: 60px 80px;
+  }
 }
